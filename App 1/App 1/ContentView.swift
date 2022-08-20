@@ -10,15 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Color.blue
+            Color.indigo
               .ignoresSafeArea()
             VStack{
         Text("Hello, my name is Hussain!")
             .padding()
         Text("I'm 16 years old")
-                
+            .padding()
         Text("I'm coding right now")
-                
+                    .padding()
                 HStack{
                     Text("🥶")
                     Spacer()
@@ -36,5 +36,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 12")
     }
 }
